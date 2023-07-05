@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lease-cars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+              <div class="container">
+                <div class="header__inner">
+                    <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="" class="logo__img"></a>
+                    <nav class="menu">
+                        <button class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="./index.html" class="menu__list-link">Home</a></li>
+                            <li class="menu__list-item"><a href="./katalog.html" class="menu__list-link">Каталог</a></li>
+                            <li class="menu__list-item"><a href="#!" class="menu__list-link menu__list-link--active">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+      
+        <main class="main">
+            <section class="contacts">
+                <div class="container">
+                    <h2 class="section-title contacts-title ooo">Форма обратной связи</h2>
+                    <p class="contacts__text">Не стесняйтесь обращаться к нам с вопросами</p>
+                   
+                    <form class="form" action="send_email.php" method="post">
+                        <!-- Hidden Required Fields -->
+                        <!-- <input type="hidden" name="project_name" value="Site Name">
+                        <input type="hidden" name="admin_email" value="admin@mail.com">
+                        <input type="hidden" name="form_subject" value="Form Subject"> -->
+                        <!-- END Hidden Required Fields -->
+                        
+                        <input class="form__input" type="text" id="name" name="name" required placeholder="Имя">
+                        <input class="form__input" type="email" id="email" name="email" required placeholder="E-mail">
+                        <textarea class="form__textarea" id="message" name="message" required placeholder="Ваше сообщение"></textarea>
+                        <button class="form__btn" type="submit" value="Отправить">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+      
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__menu">
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu-item"><p class="footer__menu-title">Навигация</p></li>
+                        <li class="footer__menu-item"><a href="/index.html" class="footer__menu-link">Home</a></li>
+                        <li class="footer__menu-item"><a href="./katalog.html" class="footer__menu-link">Каталог</a></li>
+                        <li class="footer__menu-item"><a href="!#" class="footer__menu-link menu__list-link--active">Контакты</a></li>
+                    </ul>
+                  
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu-item"><p class="footer__menu-title">Контакты</p></li>
+                        <li class="footer__menu-item"><a href="tel:+79787151605" class="footer__menu-link">+7 978 715 16 05</a></li>
+                        <li class="footer__menu-item"><a href="tel:+79781445981" class="footer__menu-link">+7 978 144 59 81</a></li>
+                        <li class="footer__menu-item"><a href="mailto:info@autodromodoalgarve.com" class="footer__menu-link">Почта</a></li>
+                      
+                    </ul>
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu-item"><p class="footer__menu-title">Мессенджер</p></li>
+                        <li class="footer__menu-item"><a target="_blank" href="https://vk.com/bmw_m550" class="footer__menu-link">Вконтакте</a></li>
+                        <li class="footer__menu-item"><a  target="_blank" href="https://instagram.com/tovary.from.usa?igshid=ZDdkNTZiNTM=" class="footer__menu-link">Инстаграм</a></li>
+                        <li class="footer__menu-item"><a target="_blank" href="https://www.avito.ru/user/309c1742abb3a3d87bc1b7c2946b6926/profile?src=sharing" class="footer__menu-link">Авито</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        Благодарим Вас за посещение нашего сайта! Мы искренне ценим ваше внимание и интерес к нашей компании. Наша команда постоянно стремится к развитию и улучшению качества предоставляемых услуг. Мы всегда открыты к новым идеям, предложениям и сотрудничеству.
+                    </p>    
+                        <p class="footer__copy-text">
+                            Если Вы готовы оформить заказ или хотите обсудить возможности совместной работы, пожалуйста, свяжитесь с нами через форму обратной связи или по указанным контактам. Мы уверены, что вместе мы сможем достичь новых высот и воплотить самые смелые идеи в жизнь. Спасибо, что выбрали нас!
+                        </p>                   
+                </div>     
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+ 
+</body>
+</html>
