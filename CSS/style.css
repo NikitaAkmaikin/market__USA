@@ -14,7 +14,7 @@ html {
     width: 100%;
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -52,9 +52,16 @@ a {
     padding-top: 100px;
 }
 
+.card__title::selection,
+.how__does-item::selection,
+p::selection {
+    color: #6fc1fd;
+    background-color: black;
+}
+
 /* header */
-header{
-    
+
+header{    
     z-index: 10;
     background-color: #151515;
 }
@@ -105,6 +112,9 @@ header{
     color: #0066FF; 
 }
 
+.logo__img {
+    margin-left: 25%;
+}
 /* main */
 .main {
     flex-grow: 1;
@@ -531,12 +541,14 @@ display: grid;
 }
 
 .card {
+    position: relative;
     display: block;
     text-align: center;
 }
 
 .card__img {
     width: 100%;
+    height: 215px;
 }
 
 .card__content {
@@ -544,8 +556,9 @@ display: grid;
     border-top: 0;
     padding: 0 5px;
 }
-.card__title {
 
+.card__title {
+    height: 75px;
     margin-bottom: 20px;
     padding-top: 20px;
     font-weight: 700;
@@ -554,6 +567,7 @@ display: grid;
 
 .card__text {
     margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .card__price {
@@ -573,6 +587,12 @@ display: grid;
 
 
 /* media */
+
+@media (min-width: 2256px) {
+    .title {
+        font-size: 130px;
+    }
+}
 
 @media (max-width: 1180px) {
     .important__list {
@@ -651,8 +671,10 @@ display: grid;
 
 @media (max-width: 770px) {
     .title {
-        font-size: 70px;
+        font-size: 60px;
     }
+
+    
 
     .top__link {
         max-width: 360px;
@@ -682,6 +704,10 @@ display: grid;
 
 @media (max-width: 660px) {
 
+    .title {
+        font-size: 54px;
+    }
+
     .tabs__content-item {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -705,7 +731,7 @@ display: grid;
 
 @media (max-width: 550px) {
     .title {
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .top__link {
@@ -797,4 +823,23 @@ display: grid;
    .important {
     padding-bottom: 80px;
    }
+}
+
+@media (max-width: 440px) {
+    
+    .title {
+        font-size: 35px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .how__does-item {
+        width: 180px;
+    }
+
+    .important__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
